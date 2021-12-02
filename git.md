@@ -29,13 +29,17 @@
 | コマンド | 意味 |
 | ---- | ---- |
 | git init --bare --share |  |
-| git | テスト |
-| git | テスト |
-| git | テスト |
-| git | テスト |
-| git | テスト |
-| git | テスト |
-| git | テスト |
+| git config --global user.email ---@--.-- | テスト |
+| git remote add origin https://github.com/---/--- | テスト |
+
+
+### 登録からプッシュまで
+
+| コマンド | 意味 |
+| ---- | ---- |
+|  git add | 変更したファイルをインデックスに登録 |
+| git commit -m "---" | メッセージ付きでインデックスをコミット<br>（ローカルリポジトリ内での出来事） |
+| git push origin master | ローカルリポジトリ内での作業をリモートリポジトリにプッシュ |
 
 ### オプション
 

@@ -13,6 +13,12 @@
 <br>
 ⇒作業単位で履歴を残すことで問題発生時に原因特定や対策を容易にする
 
+- 空ブランチ（独立ブランチ）
+<br>
+master(main)ブランチと何の関連性も持たないブランチ<br>
+メリット：既存ブランチとは別に履歴を残せることで、トラブルが発生した際に原因を追求しやすく、対策も練りやすい
+
+
 ## 基本コマンド
 | コマンド | 意味 |
 | ---- | ---- |
@@ -39,8 +45,8 @@
 | コマンド | 意味 |
 | ---- | ---- |
 | git init --bare --share |  |
-| git config --global user.email ---@--.-- | テスト |
-| git remote add origin https://github.com/---/--- | テスト |
+| git config --global user.email ---@--.-- | 〇〇 |
+| git remote add origin https://github.com/---/--- | 〇〇 |
 
 
 ### 登録からプッシュまで
@@ -50,6 +56,15 @@
 |  git add | 変更したファイルをインデックスに登録 |
 | git commit -m "---" | メッセージ付きでインデックスをコミット<br>（ローカルリポジトリ内での出来事） |
 | git push origin master | ローカルリポジトリ内での作業をリモートリポジトリにプッシュ |
+
+### ブランチの作成
+| コマンド | 意味 |
+| ---- | ---- |
+| git checkout -b branchname | branchnameを作成 |
+| git checkout --orphan doc | docという名前の独立ブランチを作成<br>docブランチ（ドキュメントブランチはよく独立ブランチとして作成される） |
+| git clean -f failname | 対象ファイルの削除 |
+| git clean -n | 削除対象のファイルの確認 |
+
 
 ### オプション
 

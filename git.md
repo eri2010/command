@@ -74,11 +74,11 @@ statusコマンドを実行した際に出てくる<br>
 | git add -i | 対話形式で指定<br>コマンドを表示さ、表示される選択肢を選んで指定していく |
 | git add pathspec | 削除されたファイルも追加される |
 | **git add -p**  | 1ファイル内で差分ごとにstageする、しないを対話的に行う |
-| git | mean |
-| git | mean |
+
 | git commit -m "---" | メッセージ付きでインデックスをコミット<br>（ローカルリポジトリ内での出来事） |
 | git push origin master | ローカルリポジトリ内での作業をリモートリポジトリにプッシュ<br>git push origin(リモートリポジトリ) master(pushしたいブランチ) |
-
+| git commit --amend -m | コミットメッセージの修正 |
+| git | mean |
 ### ブランチの作成
 | コマンド | 意味 |
 | ---- | ---- |
@@ -150,6 +150,21 @@ statusコマンドを実行した際に出てくる<br>
 | インデックス | リポジトリにコミットする準備をするための場所 |
 |  q | (END)から進まないとき |
 | ワード | mean |
+
+## メッセージの意味
+
+Your branch is ahead of 'origin/doc' by 1 commit.<be>
+ローカルブランチdocがリモートリポジトリより１コミット進んでいる<be>
+
+Changes to be committed:<be>
+コミットされるべき変更があります。<be>
+⇒ステージされただけの（未コミット）のファイルがあります<be>
+
+Changes not staged for commit:<be>
+変更されている、かつ、未ステージのファイルがあります
+
+
+
 
 
 
